@@ -2,9 +2,9 @@ const ssmStore = require('aws-param-store');
 const GoogleSpreadsheet = require('google-spreadsheet');
 const randomatic = require('randomatic');
 const getKeys = ssmStore.getParameterSync([
-    'bothr-clientEmail',
-    'bothr-privateKey',
-    'bothr-sheetId'
+    'hrbot-clientEmail',
+    'hrbot-privateKey',
+    'hrbot-sheetId'
 ], {
     region: 'ap-southeast-1'
 });
