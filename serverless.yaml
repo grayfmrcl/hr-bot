@@ -1,4 +1,4 @@
-service: hrbot-service
+service: read-aws-ssm-parameters
 provider:
   name: aws
   runtime: nodejs8.10
@@ -7,13 +7,13 @@ provider:
     - Effect: Allow
       Action:
         - ssm:GetParameters
-      Resource: ""
+      Resource: "arn:aws:ssm:ap-southeast-1:453047983468:parameter/*"
   functions:
     main:
       handler: handler.main
       events:
         - http:
-            path: bothr
+            path: hrbot
             method: post
-  plugins:
-    - serverless-offline
+plugins:
+  - serverless-offline
