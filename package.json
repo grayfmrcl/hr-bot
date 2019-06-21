@@ -1,5 +1,5 @@
 {
-  "name": "hr-bot",
+  "name": "sarccom-wa-bot-ans",
   "version": "1.0.0",
   "description": "",
   "main": "handler.js",
@@ -10,10 +10,12 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "serverless-offline": "^5.4.2"
+    "serverless-offline": "^3.31.3"
   },
   "dependencies": {
-    "aws-param-store": "^3.0.0",
-    "aws-sdk": "^2.479.0"
+    "aws-param-store": "^2.1.0",
+    "aws-sdk": "^2.377.0",
+    "google-spreadsheet": "^2.0.6",
+    "randomatic": "^3.1.1"
   }
 }
